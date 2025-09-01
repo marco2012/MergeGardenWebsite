@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/MergeGardenWebsite/static/css/main.09034d01.css",
-    "main.js": "/MergeGardenWebsite/static/js/main.12804aaa.js",
-    "static/js/453.2a00a904.chunk.js": "/MergeGardenWebsite/static/js/453.2a00a904.chunk.js",
-    "index.html": "/MergeGardenWebsite/index.html",
-    "main.09034d01.css.map": "/MergeGardenWebsite/static/css/main.09034d01.css.map",
-    "main.12804aaa.js.map": "/MergeGardenWebsite/static/js/main.12804aaa.js.map",
-    "453.2a00a904.chunk.js.map": "/MergeGardenWebsite/static/js/453.2a00a904.chunk.js.map"
+    "main.css": "/static/css/main.09034d01.css",
+    "main.js": "/static/js/main.5da14718.js",
+    "static/js/453.2a00a904.chunk.js": "/static/js/453.2a00a904.chunk.js",
+    "index.html": "/index.html",
+    "main.09034d01.css.map": "/static/css/main.09034d01.css.map",
+    "main.5da14718.js.map": "/static/js/main.5da14718.js.map",
+    "453.2a00a904.chunk.js.map": "/static/js/453.2a00a904.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.09034d01.css",
-    "static/js/main.12804aaa.js"
+    "static/js/main.5da14718.js"
   ]
 }
