@@ -1,5 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import {
+    trackDownload,
+    trackVideoPlay,
+    trackExternalLink,
+} from "../utils/analytics";
 
 export default function Home() {
     return (
@@ -48,6 +53,7 @@ export default function Home() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-block transition-all duration-300 transform hover:scale-105"
+                                onClick={() => trackDownload("app_store")}
                             >
                                 <img
                                     src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&releaseDate=1276560000"
@@ -61,6 +67,7 @@ export default function Home() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-block transition-all duration-300 transform hover:scale-105"
+                                onClick={() => trackDownload("google_play")}
                             >
                                 <img
                                     src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
@@ -91,6 +98,7 @@ export default function Home() {
                                 objectFit: "contain",
                                 maxHeight: "600px",
                             }}
+                            onPlay={() => trackVideoPlay()}
                         >
                             <source
                                 src={process.env.PUBLIC_URL + "/game.webm"}
@@ -304,6 +312,7 @@ export default function Home() {
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-block transition-all duration-300 transform hover:scale-105"
+                            onClick={() => trackDownload("app_store")}
                         >
                             <img
                                 src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&releaseDate=1276560000"
@@ -317,6 +326,7 @@ export default function Home() {
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-block transition-all duration-300 transform hover:scale-105"
+                            onClick={() => trackDownload("google_play")}
                         >
                             <img
                                 src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
