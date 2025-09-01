@@ -1,7 +1,7 @@
 {
   "name": "merge-garden-website",
   "version": "0.1.0",
-  "homepage": "https://marlup.top/MergeGardenWebsite/",
+  "homepage": "https://mergegarden.top/",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
