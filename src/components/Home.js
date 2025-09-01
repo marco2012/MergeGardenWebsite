@@ -8,7 +8,7 @@ export default function Home() {
             <section className="relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5"></div>
 
-                <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16">
+                <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-6">
                     <div className="text-center">
                         {/* App Icon */}
                         <div className="mb-8 animate-float">
@@ -45,10 +45,10 @@ export default function Home() {
                         >
                             <a
                                 href="#download"
-                                className="inline-flex items-center justify-center px-8 py-4 bg-primary hover:bg-primary-dark text-white font-semibold rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl cursor-pointer"
+                                className="inline-flex items-center justify-center px-8 py-4 bg-primary hover:bg-primary-dark text-white font-semibold rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl cursor-pointer w-64 whitespace-nowrap"
                             >
                                 <svg
-                                    className="w-6 h-6 mr-3"
+                                    className="w-6 h-6 mr-3 flex-shrink-0"
                                     viewBox="0 0 24 24"
                                     fill="currentColor"
                                 >
@@ -59,7 +59,7 @@ export default function Home() {
 
                             <a
                                 href="#download"
-                                className="inline-flex items-center justify-center px-8 py-4 bg-foreground hover:bg-muted text-background font-semibold rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl cursor-pointer"
+                                className="inline-flex items-center justify-center px-8 py-4 bg-foreground hover:bg-muted text-background font-semibold rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl cursor-pointer w-64 whitespace-nowrap"
                             >
                                 <svg
                                     className="w-6 h-6 mr-3"
@@ -71,6 +71,46 @@ export default function Home() {
                                 Get it on Google Play
                             </a>
                         </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Gameplay Video Section */}
+            <section className="py-4">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <div
+                        className="relative rounded-3xl shadow-2xl overflow-hidden bg-gradient-to-br from-primary/10 to-secondary/10 animate-fade-in-up"
+                        style={{ animationDelay: "0.2s" }}
+                    >
+                        <video
+                            src={process.env.PUBLIC_URL + "/game.webm"}
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                            className="w-full h-auto object-contain rounded-3xl"
+                            style={{
+                                objectFit: "contain",
+                                maxHeight: "600px",
+                            }}
+                        >
+                            <source
+                                src={process.env.PUBLIC_URL + "/game.webm"}
+                                type="video/webm"
+                            />
+                            <img
+                                src={
+                                    process.env.PUBLIC_URL +
+                                    "/screenshots/game.PNG"
+                                }
+                                alt="Game Screenshot Fallback"
+                                className="w-full h-auto object-contain rounded-3xl"
+                                style={{
+                                    objectFit: "contain",
+                                    maxHeight: "600px",
+                                }}
+                            />
+                        </video>
                     </div>
                 </div>
             </section>
@@ -103,7 +143,7 @@ export default function Home() {
                                     className="w-full h-auto object-contain rounded-3xl"
                                     style={{
                                         objectFit: "contain",
-                                        maxHeight: "450px",
+                                        maxHeight: "550px",
                                     }}
                                 />
                                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-6">
@@ -120,38 +160,18 @@ export default function Home() {
 
                         <div className="animate-fade-in-up order-first md:order-none">
                             <div className="relative rounded-3xl shadow-2xl overflow-hidden bg-gradient-to-br from-primary/10 to-secondary/10">
-                                <video
-                                    src={process.env.PUBLIC_URL + "/game.webm"}
-                                    autoPlay
-                                    loop
-                                    muted
-                                    playsInline
+                                <img
+                                    src={
+                                        process.env.PUBLIC_URL +
+                                        "/screenshots/game.PNG"
+                                    }
+                                    alt="Core Gameplay"
                                     className="w-full h-auto object-contain rounded-3xl"
                                     style={{
                                         objectFit: "contain",
-                                        maxHeight: "450px",
+                                        maxHeight: "550px",
                                     }}
-                                >
-                                    <source
-                                        src={
-                                            process.env.PUBLIC_URL +
-                                            "/game.webm"
-                                        }
-                                        type="video/webm"
-                                    />
-                                    <img
-                                        src={
-                                            process.env.PUBLIC_URL +
-                                            "/screenshots/game.PNG"
-                                        }
-                                        alt="Game Screenshot Fallback"
-                                        className="w-full h-auto object-contain rounded-3xl"
-                                        style={{
-                                            objectFit: "contain",
-                                            maxHeight: "450px",
-                                        }}
-                                    />
-                                </video>
+                                />
                                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-6">
                                     <h3 className="text-white font-semibold text-lg">
                                         Core Gameplay
@@ -175,7 +195,7 @@ export default function Home() {
                                     className="w-full h-auto object-contain rounded-3xl"
                                     style={{
                                         objectFit: "contain",
-                                        maxHeight: "450px",
+                                        maxHeight: "550px",
                                     }}
                                 />
                                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-6">
@@ -285,10 +305,10 @@ export default function Home() {
                             href="https://apps.apple.com"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center justify-center px-8 py-4 bg-primary hover:bg-primary-dark text-white font-semibold rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl cursor-pointer"
+                            className="inline-flex items-center justify-center px-8 py-4 bg-primary hover:bg-primary-dark text-white font-semibold rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl cursor-pointer w-64 whitespace-nowrap"
                         >
                             <svg
-                                className="w-6 h-6 mr-3"
+                                className="w-6 h-6 mr-3 flex-shrink-0"
                                 viewBox="0 0 24 24"
                                 fill="currentColor"
                             >
@@ -301,10 +321,10 @@ export default function Home() {
                             href="https://play.google.com"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center justify-center px-8 py-4 bg-foreground hover:bg-muted text-background font-semibold rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl cursor-pointer"
+                            className="inline-flex items-center justify-center px-8 py-4 bg-foreground hover:bg-muted text-background font-semibold rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl cursor-pointer w-64 whitespace-nowrap"
                         >
                             <svg
-                                className="w-6 h-6 mr-3"
+                                className="w-6 h-6 mr-3 flex-shrink-0"
                                 viewBox="0 0 24 24"
                                 fill="currentColor"
                             >

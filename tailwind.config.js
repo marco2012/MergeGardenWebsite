@@ -12,7 +12,7 @@ module.exports = {
                 accent: "#ff9500",
                 danger: "#ff3b30",
                 success: "#4caf50",
-                muted: "#8e8e93",
+                muted: "#a1a1a6",
                 border: "#38383a",
                 card: "#1c1c1e",
                 "card-shadow": "rgba(0, 0, 0, 0.04)",
