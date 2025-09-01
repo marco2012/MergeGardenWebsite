@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/merge-garden-website/static/css/main.662ad766.css",
-    "main.js": "/merge-garden-website/static/js/main.07e77173.js",
-    "static/js/453.2a00a904.chunk.js": "/merge-garden-website/static/js/453.2a00a904.chunk.js",
-    "index.html": "/merge-garden-website/index.html",
-    "main.662ad766.css.map": "/merge-garden-website/static/css/main.662ad766.css.map",
-    "main.07e77173.js.map": "/merge-garden-website/static/js/main.07e77173.js.map",
-    "453.2a00a904.chunk.js.map": "/merge-garden-website/static/js/453.2a00a904.chunk.js.map"
+    "main.css": "/MergeGardenWebsite/static/css/main.662ad766.css",
+    "main.js": "/MergeGardenWebsite/static/js/main.9f838c7c.js",
+    "static/js/453.2a00a904.chunk.js": "/MergeGardenWebsite/static/js/453.2a00a904.chunk.js",
+    "index.html": "/MergeGardenWebsite/index.html",
+    "main.662ad766.css.map": "/MergeGardenWebsite/static/css/main.662ad766.css.map",
+    "main.9f838c7c.js.map": "/MergeGardenWebsite/static/js/main.9f838c7c.js.map",
+    "453.2a00a904.chunk.js.map": "/MergeGardenWebsite/static/js/453.2a00a904.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.662ad766.css",
-    "static/js/main.07e77173.js"
+    "static/js/main.9f838c7c.js"
   ]
 }
