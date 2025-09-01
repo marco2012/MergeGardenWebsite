@@ -14,7 +14,9 @@ export default function Home() {
                         <div className="mb-8 animate-float">
                             <div className="inline-flex items-center justify-center w-24 h-24 bg-gradient-to-br from-primary to-primary-dark rounded-3xl shadow-2xl animate-pulse-glow">
                                 <img
-                                    src="/icon-512.png"
+                                    src={
+                                        process.env.PUBLIC_URL + "/icon-512.png"
+                                    }
                                     alt="Merge Garden App Icon"
                                     className="w-20 h-20 rounded-2xl"
                                 />
@@ -93,7 +95,10 @@ export default function Home() {
                         <div className="animate-fade-in-left order-2 md:order-1">
                             <div className="relative rounded-3xl shadow-2xl overflow-hidden">
                                 <img
-                                    src="/screenshots/tutorial.PNG"
+                                    src={
+                                        process.env.PUBLIC_URL +
+                                        "/screenshots/tutorial.PNG"
+                                    }
                                     alt="Interactive Tutorial"
                                     className="w-full h-auto object-contain rounded-3xl"
                                     style={{
@@ -116,7 +121,7 @@ export default function Home() {
                         <div className="animate-fade-in-up order-first md:order-none">
                             <div className="relative rounded-3xl shadow-2xl overflow-hidden bg-gradient-to-br from-primary/10 to-secondary/10">
                                 <video
-                                    src="/game.webm"
+                                    src={process.env.PUBLIC_URL + "/game.webm"}
                                     autoPlay
                                     loop
                                     muted
@@ -128,11 +133,17 @@ export default function Home() {
                                     }}
                                 >
                                     <source
-                                        src="/game.webm"
+                                        src={
+                                            process.env.PUBLIC_URL +
+                                            "/game.webm"
+                                        }
                                         type="video/webm"
                                     />
                                     <img
-                                        src="/screenshots/game.PNG"
+                                        src={
+                                            process.env.PUBLIC_URL +
+                                            "/screenshots/game.PNG"
+                                        }
                                         alt="Game Screenshot Fallback"
                                         className="w-full h-auto object-contain rounded-3xl"
                                         style={{
@@ -156,7 +167,10 @@ export default function Home() {
                         <div className="animate-fade-in-right order-3 md:order-3">
                             <div className="relative rounded-3xl shadow-2xl overflow-hidden">
                                 <img
-                                    src="/screenshots/stats.PNG"
+                                    src={
+                                        process.env.PUBLIC_URL +
+                                        "/screenshots/stats.PNG"
+                                    }
                                     alt="Statistics & Analytics"
                                     className="w-full h-auto object-contain rounded-3xl"
                                     style={{
@@ -268,7 +282,9 @@ export default function Home() {
                         style={{ animationDelay: "0.4s" }}
                     >
                         <a
-                            href="#"
+                            href="https://apps.apple.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="inline-flex items-center justify-center px-8 py-4 bg-primary hover:bg-primary-dark text-white font-semibold rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl cursor-pointer"
                         >
                             <svg
@@ -282,7 +298,9 @@ export default function Home() {
                         </a>
 
                         <a
-                            href="#"
+                            href="https://play.google.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="inline-flex items-center justify-center px-8 py-4 bg-foreground hover:bg-muted text-background font-semibold rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl cursor-pointer"
                         >
                             <svg
@@ -312,7 +330,9 @@ export default function Home() {
                         <div className="flex items-center justify-center mb-4">
                             <div className="w-8 h-8 bg-gradient-to-br from-primary to-primary-dark rounded-xl flex items-center justify-center mr-3">
                                 <img
-                                    src="/icon-128.png"
+                                    src={
+                                        process.env.PUBLIC_URL + "/icon-128.png"
+                                    }
                                     alt="Merge Garden App Icon"
                                     className="w-6 h-6 rounded-lg"
                                 />

@@ -8,7 +8,7 @@ export default function PrivacyPolicy() {
             <header className="py-8 border-b border-border">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <Link
-                        to="/"
+                        to="/MergeGardenWebsite"
                         className="inline-flex items-center text-primary hover:text-primary-dark transition-colors mb-4"
                     >
                         <svg
