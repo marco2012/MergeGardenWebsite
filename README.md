@@ -1,70 +1,106 @@
-# Getting Started with Create React App
+# Merge Garden Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A beautiful, responsive website for the Merge Garden mobile game, built with React and Tailwind CSS.
+
+## Features
+
+-   🎮 **Game Showcase**: Beautiful screenshots and gameplay video
+-   📱 **Mobile-First Design**: Responsive design that works on all devices
+-   ⚡ **Smooth Animations**: Custom CSS animations and transitions
+-   🎨 **Modern UI**: Dark theme with green accent colors
+-   📄 **Privacy Policy**: Complete privacy policy page
+-   🔗 **App Store Links**: Direct links to download the game
+
+## Tech Stack
+
+-   **React 19**: Modern React with hooks
+-   **React Router**: Client-side routing
+-   **Tailwind CSS**: Utility-first CSS framework
+-   **Custom Animations**: CSS keyframes and transitions
+
+## Getting Started
+
+### Prerequisites
+
+-   Node.js (v14 or higher)
+-   npm or yarn
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone <repository-url>
+cd merge-garden-website
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Start the development server:
+
+```bash
+npm start
+```
+
+4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## Available Scripts
 
-In the project directory, you can run:
+-   `npm start` - Runs the app in development mode
+-   `npm run build` - Builds the app for production
+-   `npm test` - Launches the test runner
+-   `npm run eject` - Ejects from Create React App (one-way operation)
 
-### `npm start`
+## Project Structure
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```
+src/
+├── components/
+│   ├── Home.js          # Main landing page
+│   └── Privacy.js       # Privacy policy page
+├── App.js               # Main app component with routing
+├── index.js             # App entry point
+└── index.css            # Global styles with Tailwind
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Customization
 
-### `npm test`
+### Colors
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The website uses a custom color palette defined in `tailwind.config.js`:
 
-### `npm run build`
+-   Background: `#0a0a0a` (dark)
+-   Foreground: `#ededed` (light text)
+-   Primary: `#2d5a2d` (green)
+-   Secondary: `#34c759` (bright green)
+-   Accent: `#ff9500` (orange)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Animations
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Custom animations are defined in the Tailwind config:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+-   `fade-in-up`: Fade in from bottom
+-   `fade-in-left`: Fade in from left
+-   `fade-in-right`: Fade in from right
+-   `float`: Gentle floating animation
+-   `pulse-glow`: Glowing pulse effect
 
-### `npm run eject`
+## Deployment
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The website can be deployed to any static hosting service:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Build the project:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm run build
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. Deploy the `build` folder to your hosting service.
 
-## Learn More
+## Contact
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+For questions about the Merge Garden game, contact: pingponggamesstudio@gmail.com
