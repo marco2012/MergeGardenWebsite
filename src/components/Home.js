@@ -84,39 +84,64 @@ export default function Home() {
             <section className="py-4">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <div
-                        className="relative rounded-3xl shadow-2xl overflow-hidden bg-gradient-to-br from-primary/10 to-secondary/10 animate-fade-in-up"
+                        className="relative animate-fade-in-up flex justify-center"
                         style={{ animationDelay: "0.2s" }}
                     >
-                        <video
-                            src={process.env.PUBLIC_URL + "/game.webm"}
-                            autoPlay
-                            loop
-                            muted
-                            playsInline
-                            className="w-full h-auto object-contain rounded-3xl"
-                            style={{
-                                objectFit: "contain",
-                                maxHeight: "600px",
-                            }}
-                            onPlay={() => trackVideoPlay()}
-                        >
-                            <source
-                                src={process.env.PUBLIC_URL + "/game.webm"}
-                                type="video/webm"
-                            />
-                            <img
-                                src={
-                                    process.env.PUBLIC_URL +
-                                    "/screenshots/game.PNG"
-                                }
-                                alt="Game Screenshot Fallback"
-                                className="w-full h-auto object-contain rounded-3xl"
-                                style={{
-                                    objectFit: "contain",
-                                    maxHeight: "600px",
-                                }}
-                            />
-                        </video>
+                        {/* iPhone Mockup */}
+                        <div className="relative mt-4">
+                            {/* iPhone Frame */}
+                            <div className="relative bg-gray-900 rounded-[3rem] p-2 shadow-2xl shadow-white/20 ring-1 ring-white/10">
+                                {/* Screen */}
+                                <div className="bg-black rounded-[2.5rem] overflow-hidden relative">
+                                    {/* Video Content */}
+                                    <video
+                                        src={
+                                            process.env.PUBLIC_URL +
+                                            "/game.webm"
+                                        }
+                                        autoPlay
+                                        loop
+                                        muted
+                                        playsInline
+                                        className="w-full h-auto object-cover"
+                                        style={{
+                                            objectFit: "cover",
+                                            maxHeight: "600px",
+                                        }}
+                                        onPlay={() => trackVideoPlay()}
+                                    >
+                                        <source
+                                            src={
+                                                process.env.PUBLIC_URL +
+                                                "/game.webm"
+                                            }
+                                            type="video/webm"
+                                        />
+                                        <img
+                                            src={
+                                                process.env.PUBLIC_URL +
+                                                "/screenshots/game.PNG"
+                                            }
+                                            alt="Game Screenshot Fallback"
+                                            className="w-full h-auto object-cover"
+                                            style={{
+                                                objectFit: "cover",
+                                                maxHeight: "600px",
+                                            }}
+                                        />
+                                    </video>
+
+                                    {/* Home Indicator */}
+                                    <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-white/30 rounded-full"></div>
+                                </div>
+                            </div>
+
+                            {/* Side Buttons */}
+                            <div className="absolute left-0 top-16 w-1 h-16 bg-gray-800 rounded-r-sm"></div>
+                            <div className="absolute left-0 top-32 w-1 h-8 bg-gray-800 rounded-r-sm"></div>
+                            <div className="absolute left-0 top-44 w-1 h-8 bg-gray-800 rounded-r-sm"></div>
+                            <div className="absolute right-0 top-20 w-1 h-20 bg-gray-800 rounded-l-sm"></div>
+                        </div>
                     </div>
                 </div>
             </section>
