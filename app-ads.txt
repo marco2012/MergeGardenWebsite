@@ -2,4 +2,4 @@
 # This file authorizes ad networks to sell ads for this app/website
 # Replace pub-0000000000000000 with your actual AdMob Publisher ID
 
-google.com, pub-0000000000000000, DIRECT
+google.com, pub-5533537533538327, DIRECT, f08c47fec0942fa0
