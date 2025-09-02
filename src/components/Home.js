@@ -404,7 +404,7 @@ export default function Home() {
                                 href="mailto:pingponggamesstudio@gmail.com"
                                 className="text-primary hover:text-primary-dark transition-colors cursor-pointer"
                             >
-                                Contact: pingponggamesstudio@gmail.com
+                                pingponggamesstudio@gmail.com
                             </a>
                             <span className="hidden sm:inline">•</span>
                             <a
