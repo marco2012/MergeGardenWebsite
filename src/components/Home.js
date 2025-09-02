@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { trackDownload, trackVideoPlay } from "../utils/analytics";
 
 export default function Home() {
@@ -408,12 +407,12 @@ export default function Home() {
                                 Contact: pingponggamesstudio@gmail.com
                             </a>
                             <span className="hidden sm:inline">•</span>
-                            <Link
-                                to="/privacy"
+                            <a
+                                href="https://mergegarden.top/#/privacy"
                                 className="text-primary hover:text-primary-dark transition-colors cursor-pointer"
                             >
                                 Privacy Policy
-                            </Link>
+                            </a>
                         </div>
                     </div>
                 </div>
