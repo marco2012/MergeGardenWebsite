@@ -1,10 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {
-    trackDownload,
-    trackVideoPlay,
-    trackExternalLink,
-} from "../utils/analytics";
+import { trackDownload, trackVideoPlay } from "../utils/analytics";
 
 export default function Home() {
     return (
@@ -90,25 +86,34 @@ export default function Home() {
                         {/* iPhone Mockup */}
                         <div className="relative mt-4">
                             {/* iPhone Frame */}
-                            <div className="relative bg-gray-900 rounded-[3rem] p-2 shadow-2xl shadow-white/20 ring-1 ring-white/10">
+                            <div
+                                className="relative bg-gray-900 rounded-[3rem] p-2 shadow-2xl shadow-white/40 ring-1 ring-white/20"
+                                style={{
+                                    boxShadow:
+                                        "0 0 30px rgba(255, 255, 255, 0.3), 0 0 60px rgba(255, 255, 255, 0.2), 0 0 90px rgba(255, 255, 255, 0.1)",
+                                }}
+                            >
                                 {/* Screen */}
                                 <div className="bg-black rounded-[2.5rem] overflow-hidden relative">
                                     {/* Video Content */}
                                     <video
-                                        src={
-                                            process.env.PUBLIC_URL +
-                                            "/game.webm"
-                                        }
                                         autoPlay
                                         loop
                                         muted
                                         playsInline
+                                        preload="metadata"
+                                        webkit-playsinline="true"
                                         className="w-full h-auto object-cover"
                                         style={{
                                             objectFit: "cover",
                                             maxHeight: "600px",
                                         }}
                                         onPlay={() => trackVideoPlay()}
+                                        onError={(e) => {
+                                            console.log("Video error:", e);
+                                            // Fallback to image if video fails
+                                            e.target.style.display = "none";
+                                        }}
                                     >
                                         <source
                                             src={
@@ -116,6 +121,13 @@ export default function Home() {
                                                 "/game.webm"
                                             }
                                             type="video/webm"
+                                        />
+                                        <source
+                                            src={
+                                                process.env.PUBLIC_URL +
+                                                "/game.mp4"
+                                            }
+                                            type="video/mp4"
                                         />
                                         <img
                                             src={
