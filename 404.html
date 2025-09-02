@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="%PUBLIC_URL%/icon-128.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <meta
+            name="description"
+            content="Merge Garden - Merge connected tiles to create higher numbers and achieve the highest score in this addictive puzzle game!"
+        />
+        <link rel="apple-touch-icon" href="%PUBLIC_URL%/icon-512.png" />
+        <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+        <title>Merge Garden - Addictive Puzzle Game</title>
+
+        <!-- Google Analytics 4 -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-YOUR-ACTUAL-ID"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+            gtag("config", "G-YOUR-ACTUAL-ID", {
+                page_title: "Merge Garden - Addictive Puzzle Game",
+                page_location: window.location.href,
+                send_page_view: true,
+            });
+        </script>
+
+        <script>
+            // GitHub Pages 404 redirect for client-side routing
+            // This script redirects any 404 to the index.html and lets React Router handle the routing
+            var pathSegmentsToKeep = 0;
+            var l = window.location;
+            l.replace(
+                l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+                l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
+                l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+                (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+                l.hash
+            );
+        </script>
+    </head>
+    <body>
+        <noscript>You need to enable JavaScript to run this app.</noscript>
+        <div id="root"></div>
+    </body>
+</html>
