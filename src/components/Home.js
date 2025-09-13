@@ -44,7 +44,7 @@ export default function Home() {
                             style={{ animationDelay: "0.4s" }}
                         >
                             <a
-                                href="https://apps.apple.com"
+                                href="https://apps.apple.com/ie/app/merge-garden/id6751854419"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-block transition-all duration-300 transform hover:scale-105"
@@ -54,20 +54,6 @@ export default function Home() {
                                     src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&releaseDate=1276560000"
                                     alt="Download on the App Store"
                                     className="h-16 w-48 object-contain"
-                                />
-                            </a>
-
-                            <a
-                                href="https://play.google.com"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-block transition-all duration-300 transform hover:scale-105"
-                                onClick={() => trackDownload("google_play")}
-                            >
-                                <img
-                                    src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
-                                    alt="Get it on Google Play"
-                                    className="h-24 w-54 object-contain"
                                 />
                             </a>
                         </div>
@@ -344,7 +330,7 @@ export default function Home() {
                         style={{ animationDelay: "0.4s" }}
                     >
                         <a
-                            href="https://apps.apple.com"
+                            href="https://apps.apple.com/ie/app/merge-garden/id6751854419"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-block transition-all duration-300 transform hover:scale-105"
@@ -354,20 +340,6 @@ export default function Home() {
                                 src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&releaseDate=1276560000"
                                 alt="Download on the App Store"
                                 className="h-14 w-44 object-contain"
-                            />
-                        </a>
-
-                        <a
-                            href="https://play.google.com"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="inline-block transition-all duration-300 transform hover:scale-105"
-                            onClick={() => trackDownload("google_play")}
-                        >
-                            <img
-                                src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
-                                alt="Get it on Google Play"
-                                className="h-20 w-50 object-contain"
                             />
                         </a>
                     </div>
